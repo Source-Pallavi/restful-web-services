@@ -11,4 +11,8 @@ public class HelloWorldController {
     public String hellWorld() {
         return "Hello World";
     }
+    @GetMapping(path = "/hello_worldbean")
+    public HelloWorldBean hellWorldBean() {//how to get response in format of json
+        return new HelloWorldBean("Hello World");
+    }
 }
